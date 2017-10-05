@@ -1,0 +1,69 @@
+
+body {
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 120%;
+  line-height: 1.4;
+  margin: 0;
+}
+main {
+  display: block;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 10vw;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
+}
+body { font-weight: 400; }
+h1 { font-weight: 700; }
+h2, h3 { font-weight: 500; font-style: italic; }
+
+pre, code, kbd, tt, samp {
+  font-family: 'Monaco', 'Fira Code', 'Hack', monospace;  
+  font-size: .85rem;
+}
+p > code {
+  border: .075rem solid #dbdbdb;
+  border-radius: .1rem;
+  background: whitesmoke;
+}
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  padding-left: 1ch;
+  border-left: 1ch solid whitesmoke;
+}
+
+img {
+  max-width: 100%;
+  max-height: 90vh;
+  margin: 0 auto;
+  display: block;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+a, a:visited { color: inherit; text-decoration: inherit; position: relative; }
+a { text-decoration: inherit; border-bottom: 1px solid #FF0019; }
+
+[id]:hover>a::after,
+[id]:target>a::after {
+  content: '🔗';
+  font-style: normal;
+  padding-left: .5ch;
+}
+h1>a, h2>a, h3>a, h4>a {border: none;}
+header h1 a { border: none; }
+header h1 {
+  font-family: inherit;
+  margin-top: 2vw;
+  font-weight: 800;
+  font-size: 1em;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}

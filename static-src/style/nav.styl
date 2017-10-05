@@ -1,0 +1,86 @@
+@import "nib"
+
+#nav-components
+  // not moved yet, so hide functional elements
+  #nav-overlay, #nav-toggle
+    display none
+
+// Nav drawer
+.nav-drawer
+  display block
+  text-align center
+  li
+    display inline-block
+    margin 0 1rem
+
+
+#nav-toggle
+  position fixed
+  top 3.8rem
+  left 3vw
+  padding .5rem
+  z-index 101
+  > span
+    $height = 1rem
+    display block
+    height .125 * $height
+    width $height
+    margin-top (3 / 16) * $height
+    border-radius (3 / 16) * $height
+    background #dbdbdb
+    &:nth-child(2)
+      width (7 / 8) * $height
+      margin-left (1 / 8) * $height
+
+.nav-drawer
+  z-index 102
+  padding 1rem
+  ul
+    list-style none
+    padding 0
+    margin 0
+
+#page
+  background: white
+
+#nav-toggle
+#page
+  transition: transform .4s ease, opacity .4s ease
+  opacity: 1
+  transform: scale3d(1,1,1) translateY(0)
+
+
+#nav-overlay
+  fixed top left bottom right
+  transition background .4s ease
+  background white
+  z-index 100
+
+#page
+  absolute top left bottom right
+
+body > .nav-drawer
+  fixed top left right
+  transition opacity .4s ease
+
+// not open
+body
+  > .nav-drawer
+    pointer-events none
+    opacity: 0
+  > #nav-overlay
+    pointer-events none
+    background rgba(255,255,255,0)
+
+// open
+body.nav-open
+  > .nav-drawer
+    pointer-events all
+    opacity: 1
+  > #nav-overlay
+    pointer-events all
+    background rgba(255,255,255,0.9)
+  > #nav-toggle
+    opacity 0
+  > #page
+    transform: scale3d(.98,.98,1) translateY(1vh)

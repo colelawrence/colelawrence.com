@@ -1,0 +1,8 @@
+	<aside>
+		<h3>Recent</h3>
+		<ul style="list-style: none;">
+			{{ range first 5 (where .Site.Pages "Type" "post") }}
+			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
+		</ul>
+	</aside>
