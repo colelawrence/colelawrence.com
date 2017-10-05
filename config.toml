@@ -1,7 +1,7 @@
 baseURL = "https://colelawrence.com/"
 languageCode = "en-us"
 title = "Cole Lawrence"
-publishDir: "public"
+publishDir = "public"
 theme = "blank"
 PygmentsCodeFences = true
 pygmentsuseclasses = true
