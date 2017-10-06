@@ -12,8 +12,11 @@ main {
   padding: 2rem 10vw;
 }
 
+time { font-style: italic; }
+
 h1, h2, h3, h4 {
   font-family: 'Libre Baskerville', serif;
+  margin-bottom: .3em;
 }
 body { font-weight: 400; }
 h1 { font-weight: 700; }
