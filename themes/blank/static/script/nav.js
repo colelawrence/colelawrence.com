@@ -1,5 +1,5 @@
 ;(function (document, window) {
-  function setupNavTransitions() {
+  function setupNav() {
     // move components to body
     let comps = Array.from(document.getElementById("nav-components").children)
     comps.forEach(elc => document.body.appendChild(elc))
@@ -30,5 +30,5 @@
       previous = test
     })
   }
-  window.addEventListener("load", _ => setupNavTransitions(document))
+  window.addEventListener("load", _ => setupNav(document))
 })(document, window);

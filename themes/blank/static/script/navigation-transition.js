@@ -12,9 +12,15 @@
       return false
     }
   }
+  function findParent(element, pred) {
+    if (pred(element)) return element
+    else if (element.parentElement) return findParent(element.parentElement, pred)
+    else return null
+  }
   function onWindowClick(event) {
-    if (event.isTrusted && event.target.tagName === 'A') {
-      return onNavigation(event, window.location.href, event.target.href)
+    let targetA = findParent(event.target, el => el.tagName === 'A')
+    if (event.isTrusted && targetA) {
+      return onNavigation(event, window.location.href, targetA.href)
     }
   }
   window.addEventListener("click", onWindowClick)

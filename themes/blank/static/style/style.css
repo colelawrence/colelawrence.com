@@ -56,9 +56,13 @@ img {
 ul, ol {
   padding-left: 2rem;
 }
+ul.task-list {
+  list-style: none;
+}
 
 a, a:visited { color: inherit; text-decoration: inherit; position: relative; }
 a { text-decoration: inherit; border-bottom: 1px solid #FF0019; }
+a:hover { border-bottom-style: dashed; }
 
 [id]:hover>a::after,
 [id]:target>a::after {
@@ -66,8 +70,8 @@ a { text-decoration: inherit; border-bottom: 1px solid #FF0019; }
   font-style: normal;
   padding-left: .5ch;
 }
-h1>a, h2>a, h3>a, h4>a {border: none;}
-header h1 a { border: none; }
+h1>a, h2>a, h3>a, h4>a { border: none !important; }
+header h1 a { border: none !important; }
 header h1 {
   font-family: inherit;
   margin-top: 2vw;
