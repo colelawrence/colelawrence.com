@@ -7,10 +7,10 @@ type: "post"
 
 Today started off with the following todo list:
 
- - [ ] Find inspiring designer portfolios
+ - [ ] Find inspiring portfolios
  - [ ] Find a design challenge
 
-Starting off by looking for inspiring designer portfolios and websites (notably [Mackey Saturday](https://mackeysaturday.com/), [HeCo](https://www.helloheco.com/), and [UENO](https://ueno.co)), I found that each one had some form of identity associated with their content. For every portfolio I enjoyed reviewing, an identifying symbol and style tied their pages together. Thus, we add another task item.
+Starting off by looking for portfolios (notably [Mackey Saturday](https://mackeysaturday.com/), [HeCo](https://www.helloheco.com/), and [UENO](https://ueno.co)), I found that each one had some form of identity associated with their content. For every portfolio I enjoyed reviewing, an identifying symbol and style tied their pages together. Thus, we add another task item.
 
  - [ ] Begin designing an emblem for my site and work
 
