@@ -2,7 +2,7 @@
 title: "Step One"
 date: 2017-10-05T19:23:07-05:00
 type: "post"
-draft: true
+draft: false
 ---
 
 Today, I have just completed setting up this website (colelawrence.com) with styles and content that I find pleasant enough. But why now? Why start blogging now?
