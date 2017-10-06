@@ -1,5 +1,5 @@
 ---
-title: "Step One"
+title: "Why I'm Blogging"
 date: 2017-10-05T19:23:07-05:00
 type: "post"
 draft: false

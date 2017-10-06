@@ -1,5 +1,5 @@
 ---
-title: "Step Two: Inspiration & Logo Concepts"
+title: "Inspiration & Logo Concepts"
 date: 2017-10-06T13:59:42-05:00
 draft: false
 type: "post"
