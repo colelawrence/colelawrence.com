@@ -13,19 +13,6 @@
     display inline-block
     margin 0 1rem
 
-
-#nav-toggle
-  position fixed
-  cursor pointer
-  top 0
-  left 50%
-  margin-left -1.25rem
-  background #1b0b0b
-  // top 3.8rem
-  // left 3vw
-  padding .5rem
-  padding-top 1.3rem
-  z-index 101
   /*
   > span
     $height = 1rem
@@ -66,18 +53,26 @@
   transition: transform .4s ease, opacity .4s ease
   opacity: 1
 
-#page
-  background: white
-  transform: scale3d(1,1,1) translateY(0)
-
 #nav-toggle
+  position fixed
+  cursor pointer
+  top 0
+  left 0 // 50%
+  // margin-left -1.25rem
+  width: 100%
+  background #1b0b0b
+  // top 3.8rem
+  // left 3vw
+  padding .5rem
+  padding-top 1.3rem
+  margin-bottom 1.5rem
+  z-index 101
   transform translateY(-.8rem)
   background-color white // smoke
   background-image url(/images/brand/Macaroni.svg)
   background-position 50% 1rem
   background-size 2rem 2rem
-  box-shadow 0 .1rem .15rem rgba(0,0,0,0.1)
-  width 1.5rem
+  // width 1.5rem
   height 1.5rem
   background-repeat: no-repeat
   &:hover
@@ -85,15 +80,19 @@
   .crown
     display none
 
+body.nav-scrolled #nav-toggle
+  box-shadow 0 .1rem .15rem rgba(0,0,0,0.1)
+
+#page
+  background: white
+  transform: scale3d(1,1,1) translateY(0)
+  
+
 #nav-overlay
   fixed top left bottom right
   transition background .4s ease
   background white
   z-index 100
-
-#page
-  absolute top left bottom right
-  overflow auto
 
 body > .nav-drawer
   fixed top left right

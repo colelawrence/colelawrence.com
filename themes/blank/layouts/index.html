@@ -1,14 +1,8 @@
 {{ partial "header.html" . }}
-	<header>
-		<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-		<img src="/images/brand/Macaroni.svg" alt="'Macaroni' emblem" width="50" height="50">
-	</header>
 	{{ $paginator := .Paginate (where .Site.Pages "Type" "index") }}
 	{{ range $paginator.Pages }}
-	<article>
-		<div>
-			{{ .Content }}
-		</div>
+	<article style="max-width: 26rem; margin: 0 auto 4rem;">
+		{{ .Content }}
 	</article>
 	{{ end }}
 	{{ partial "sidebar.html" . }}

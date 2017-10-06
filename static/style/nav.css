@@ -5,21 +5,6 @@
 .nav-drawer {
   display: block;
   text-align: center;
-}
-.nav-drawer li {
-  display: inline-block;
-  margin: 0 1rem;
-}
-#nav-toggle {
-  position: fixed;
-  cursor: pointer;
-  top: 0;
-  left: 50%;
-  margin-left: -1.25rem;
-  background: #1b0b0b;
-  padding: 0.5rem;
-  padding-top: 1.3rem;
-  z-index: 101;
 /*
   > span
     $height = 1rem
@@ -32,6 +17,10 @@
     &:nth-child(2)
       width (7 / 8) * $height
       margin-left (1 / 8) * $height*/
+}
+.nav-drawer li {
+  display: inline-block;
+  margin: 0 1rem;
 }
 /*
 .crown
@@ -67,15 +56,17 @@
   -ms-filter: none;
   filter: none;
 }
-#page {
-  background: #fff;
-  -webkit-transform: scale3d(1, 1, 1) translateY(0);
-  -moz-transform: scale3d(1, 1, 1) translateY(0);
-  -o-transform: scale3d(1, 1, 1) translateY(0);
-  -ms-transform: scale3d(1, 1, 1) translateY(0);
-  transform: scale3d(1, 1, 1) translateY(0);
-}
 #nav-toggle {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1b0b0b;
+  padding: 0.5rem;
+  padding-top: 1.3rem;
+  margin-bottom: 1.5rem;
+  z-index: 101;
   -webkit-transform: translateY(-0.8rem);
   -moz-transform: translateY(-0.8rem);
   -o-transform: translateY(-0.8rem);
@@ -87,9 +78,6 @@
   -webkit-background-size: 2rem 2rem;
   -moz-background-size: 2rem 2rem;
   background-size: 2rem 2rem;
-  -webkit-box-shadow: 0 0.1rem 0.15rem rgba(0,0,0,0.1);
-  box-shadow: 0 0.1rem 0.15rem rgba(0,0,0,0.1);
-  width: 1.5rem;
   height: 1.5rem;
   background-repeat: no-repeat;
 }
@@ -102,6 +90,18 @@
 }
 #nav-toggle .crown {
   display: none;
+}
+body.nav-scrolled #nav-toggle {
+  -webkit-box-shadow: 0 0.1rem 0.15rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.1rem 0.15rem rgba(0,0,0,0.1);
+}
+#page {
+  background: #fff;
+  -webkit-transform: scale3d(1, 1, 1) translateY(0);
+  -moz-transform: scale3d(1, 1, 1) translateY(0);
+  -o-transform: scale3d(1, 1, 1) translateY(0);
+  -ms-transform: scale3d(1, 1, 1) translateY(0);
+  transform: scale3d(1, 1, 1) translateY(0);
 }
 #nav-overlay {
   position: fixed;
@@ -116,14 +116,6 @@
   transition: background 0.4s ease;
   background: #fff;
   z-index: 100;
-}
-#page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
 }
 body > .nav-drawer {
   position: fixed;

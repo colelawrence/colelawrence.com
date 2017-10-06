@@ -22,10 +22,11 @@
     const recip = 1 / samples
     const recipInf = (samples - 1) * recip
     const navScrollingDown = 'nav-scrolling-down'
-    document.getElementById("page").addEventListener("scroll", function () {
-      test = previous * recipInf + this.scrollTop * recip
-      if (previous > test) { body.classList.remove(navScrollingDown) }
-      else { body.classList.add(navScrollingDown) }
+    const navScrolled = 'nav-scrolled'
+    window.addEventListener("scroll", function () {
+      test = previous * recipInf + this.scrollY * recip
+      body.classList.toggle(navScrollingDown, previous <= test)
+      body.classList.toggle(navScrolled, this.scrollY > 5)
       previous = test
     })
   }
