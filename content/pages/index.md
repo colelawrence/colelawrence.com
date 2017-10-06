@@ -3,7 +3,8 @@ title: "index"
 draft: false
 type: "index"
 ---
-# Howdy!
+
+<h1 style="text-align: center">hello!</h1>
 
 I'm Cole, a software engineer & designer from Kansas City, Missouri.
 

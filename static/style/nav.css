@@ -16,37 +16,37 @@
   top: 0;
   left: 50%;
   margin-left: -1.25rem;
-  background: #f5f5f5;
+  background: #1b0b0b;
   padding: 0.5rem;
   padding-top: 1.3rem;
   z-index: 101;
+/*
+  > span
+    $height = 1rem
+    display block
+    height .125 * $height
+    width $height
+    margin-top (3 / 16) * $height
+    border-radius (3 / 16) * $height
+    background #c4c4c4
+    &:nth-child(2)
+      width (7 / 8) * $height
+      margin-left (1 / 8) * $height*/
 }
-#nav-toggle > span {
-  display: block;
-  height: 0.125rem;
-  width: 1rem;
-  margin-top: 0.1875rem;
-  border-radius: 0.1875rem;
-  background: #c4c4c4;
-}
-#nav-toggle > span:nth-child(2) {
-  width: 0.875rem;
-  margin-left: 0.125rem;
-}
-.crown > span {
-  display: inline-block;
-  width: 0.125rem;
-  margin-top: 0.25rem;
-  height: 0.75rem;
-  margin-left: 0.1875rem;
-  border-radius: 0.1875rem;
-  background: #dbdbdb;
-}
-.crown > span:nth-child(1),
-.crown > span:nth-child(3) {
-  height: 1rem;
-  margin-top: 0;
-}
+/*
+.crown
+  > span
+    $size = 1rem
+    display inline-block
+    width .125 * $size
+    margin-top (1 / 4) * $size
+    height (3 / 4) * $size
+    margin-left (3 / 16) * $size
+    border-radius (3 / 16) * $size
+    background #dbdbdb
+    &:nth-child(1), &:nth-child(3)
+      height $size
+      margin-top 0*/
 .nav-drawer {
   z-index: 102;
   padding: 1rem;
@@ -55,9 +55,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-#page {
-  background: #fff;
 }
 #nav-toggle,
 #page {
@@ -69,11 +66,42 @@
   opacity: 1;
   -ms-filter: none;
   filter: none;
+}
+#page {
+  background: #fff;
   -webkit-transform: scale3d(1, 1, 1) translateY(0);
   -moz-transform: scale3d(1, 1, 1) translateY(0);
   -o-transform: scale3d(1, 1, 1) translateY(0);
   -ms-transform: scale3d(1, 1, 1) translateY(0);
   transform: scale3d(1, 1, 1) translateY(0);
+}
+#nav-toggle {
+  -webkit-transform: translateY(-0.8rem);
+  -moz-transform: translateY(-0.8rem);
+  -o-transform: translateY(-0.8rem);
+  -ms-transform: translateY(-0.8rem);
+  transform: translateY(-0.8rem);
+  background-color: #fff;
+  background-image: url("/images/brand/Macaroni.svg");
+  background-position: 50% 1rem;
+  -webkit-background-size: 2rem 2rem;
+  -moz-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  -webkit-box-shadow: 0 0.1rem 0.15rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.1rem 0.15rem rgba(0,0,0,0.1);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+}
+#nav-toggle:hover {
+  -webkit-transform: translateY(-0.45rem);
+  -moz-transform: translateY(-0.45rem);
+  -o-transform: translateY(-0.45rem);
+  -ms-transform: translateY(-0.45rem);
+  transform: translateY(-0.45rem);
+}
+#nav-toggle .crown {
+  display: none;
 }
 #nav-overlay {
   position: fixed;
@@ -122,6 +150,11 @@ body.nav-scrolling-down > #nav-toggle {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  -webkit-transform: translateY(-2rem);
+  -moz-transform: translateY(-2rem);
+  -o-transform: translateY(-2rem);
+  -ms-transform: translateY(-2rem);
+  transform: translateY(-2rem);
   pointer-events: none;
 }
 body.nav-open > .nav-drawer {
@@ -140,6 +173,11 @@ body.nav-open > #nav-toggle {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+  -webkit-transform: translateY(-1rem);
+  -moz-transform: translateY(-1rem);
+  -o-transform: translateY(-1rem);
+  -ms-transform: translateY(-1rem);
+  transform: translateY(-1rem);
 }
 body.nav-open > #page {
   -webkit-transform: scale3d(0.98, 0.98, 1) translateY(1vh);

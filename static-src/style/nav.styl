@@ -20,12 +20,13 @@
   top 0
   left 50%
   margin-left -1.25rem
-  background whitesmoke
+  background #1b0b0b
   // top 3.8rem
   // left 3vw
   padding .5rem
   padding-top 1.3rem
   z-index 101
+  /*
   > span
     $height = 1rem
     display block
@@ -36,8 +37,8 @@
     background #c4c4c4
     &:nth-child(2)
       width (7 / 8) * $height
-      margin-left (1 / 8) * $height
-
+      margin-left (1 / 8) * $height*/
+/*
 .crown
   > span
     $size = 1rem
@@ -50,7 +51,7 @@
     background #dbdbdb
     &:nth-child(1), &:nth-child(3)
       height $size
-      margin-top 0
+      margin-top 0*/
 
 .nav-drawer
   z-index 102
@@ -60,15 +61,29 @@
     padding 0
     margin 0
 
-#page
-  background: white
-
 #nav-toggle
 #page
   transition: transform .4s ease, opacity .4s ease
   opacity: 1
+
+#page
+  background: white
   transform: scale3d(1,1,1) translateY(0)
 
+#nav-toggle
+  transform translateY(-.8rem)
+  background-color white // smoke
+  background-image url(/images/brand/Macaroni.svg)
+  background-position 50% 1rem
+  background-size 2rem 2rem
+  box-shadow 0 .1rem .15rem rgba(0,0,0,0.1)
+  width 1.5rem
+  height 1.5rem
+  background-repeat: no-repeat
+  &:hover
+    transform translateY(-.45rem)
+  .crown
+    display none
 
 #nav-overlay
   fixed top left bottom right
@@ -96,6 +111,7 @@ body
 body.nav-scrolling-down
   > #nav-toggle
     opacity 0
+    transform translateY(-2rem)
     pointer-events none
 
 // open
@@ -109,5 +125,6 @@ body.nav-open
     background rgba(255,255,255,0.9)
   > #nav-toggle
     opacity 0
+    transform translateY(-1rem)
   > #page
     transform: scale3d(.98,.98,1) translateY(1vh)

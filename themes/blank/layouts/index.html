@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 	<header>
 		<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+		<img src="/images/brand/Macaroni.svg" alt="'Macaroni' emblem" width="50" height="50">
 	</header>
 	{{ $paginator := .Paginate (where .Site.Pages "Type" "index") }}
 	{{ range $paginator.Pages }}

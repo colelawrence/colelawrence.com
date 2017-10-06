@@ -12,11 +12,18 @@ main {
   padding: 2rem 10vw;
 }
 
+footer {
+  margin-top: 4rem;
+  color: #c4c4c4;
+}
+small {font-size: 13px;}
+
 time { font-style: italic; }
 
 h1, h2, h3, h4 {
   font-family: 'Libre Baskerville', serif;
   margin-bottom: .3em;
+  color: #1b0b0b;
 }
 body { font-weight: 400; }
 h1 { font-weight: 700; }

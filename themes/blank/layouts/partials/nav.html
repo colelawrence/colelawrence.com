@@ -1,3 +1,4 @@
+<style>#nav-components{visibility:hidden;position:absolute;}</style>
 <link rel="stylesheet" href="/style/nav.css" rel="stylesheet/css">
 <div id="nav-components">
   <div id="nav-toggle">
@@ -7,10 +8,12 @@
     <header><h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1></header>
     <nav>
       <ul class="nav">
-        <li><a href="/">home</a></li>
+        <li><a href="/">about</a></li>
+        <li><a href="/posts">posts</a></li>
       </ul>
     </nav>
   </div>
   <div id="nav-overlay"></div>
 </div>
-<script defer src="/script/nav.js"></script>
+<script src="/script/nav.js"></script>
+<style>#nav-components{visibility:visible;position:relative;}</style>
