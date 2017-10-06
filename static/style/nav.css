@@ -1,0 +1,152 @@
+#nav-components #nav-overlay,
+#nav-components #nav-toggle {
+  display: none;
+}
+.nav-drawer {
+  display: block;
+  text-align: center;
+}
+.nav-drawer li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+#nav-toggle {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  left: 50%;
+  margin-left: -1.25rem;
+  background: #f5f5f5;
+  padding: 0.5rem;
+  padding-top: 1.3rem;
+  z-index: 101;
+}
+#nav-toggle > span {
+  display: block;
+  height: 0.125rem;
+  width: 1rem;
+  margin-top: 0.1875rem;
+  border-radius: 0.1875rem;
+  background: #c4c4c4;
+}
+#nav-toggle > span:nth-child(2) {
+  width: 0.875rem;
+  margin-left: 0.125rem;
+}
+.crown > span {
+  display: inline-block;
+  width: 0.125rem;
+  margin-top: 0.25rem;
+  height: 0.75rem;
+  margin-left: 0.1875rem;
+  border-radius: 0.1875rem;
+  background: #dbdbdb;
+}
+.crown > span:nth-child(1),
+.crown > span:nth-child(3) {
+  height: 1rem;
+  margin-top: 0;
+}
+.nav-drawer {
+  z-index: 102;
+  padding: 1rem;
+}
+.nav-drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#page {
+  background: #fff;
+}
+#nav-toggle,
+#page {
+  -webkit-transition: -webkit-transform 0.4s ease, opacity 0.4s ease;
+  -moz-transition: -moz-transform 0.4s ease, opacity 0.4s ease;
+  -o-transition: -o-transform 0.4s ease, opacity 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: scale3d(1, 1, 1) translateY(0);
+  -moz-transform: scale3d(1, 1, 1) translateY(0);
+  -o-transform: scale3d(1, 1, 1) translateY(0);
+  -ms-transform: scale3d(1, 1, 1) translateY(0);
+  transform: scale3d(1, 1, 1) translateY(0);
+}
+#nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: background 0.4s ease;
+  -moz-transition: background 0.4s ease;
+  -o-transition: background 0.4s ease;
+  -ms-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+  background: #fff;
+  z-index: 100;
+}
+#page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+}
+body > .nav-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+body > .nav-drawer {
+  pointer-events: none;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+body > #nav-overlay {
+  pointer-events: none;
+  background: rgba(255,255,255,0);
+}
+body.nav-scrolling-down > #nav-toggle {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  pointer-events: none;
+}
+body.nav-open > .nav-drawer {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+body.nav-open > .nav-drawer a {
+  pointer-events: all;
+}
+body.nav-open > #nav-overlay {
+  pointer-events: all;
+  background: rgba(255,255,255,0.9);
+}
+body.nav-open > #nav-toggle {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+body.nav-open > #page {
+  -webkit-transform: scale3d(0.98, 0.98, 1) translateY(1vh);
+  -moz-transform: scale3d(0.98, 0.98, 1) translateY(1vh);
+  -o-transform: scale3d(0.98, 0.98, 1) translateY(1vh);
+  -ms-transform: scale3d(0.98, 0.98, 1) translateY(1vh);
+  transform: scale3d(0.98, 0.98, 1) translateY(1vh);
+}
+
+/*# sourceMappingURL=nav.css.map */
