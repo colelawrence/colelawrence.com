@@ -10,6 +10,6 @@ type: "index"
 
 <h1 style="text-align: center">hello, I'm Cole!</h1>
 
-I am a software engineer & designer from Kansas City, Missouri.
+I am a software engineer from Kansas City, Missouri.
 
-You can learn a bit more about me by reading [my posts](/posts) or by looking at [my resume](/2017/10/Cole_Lawrence_resume.pdf)
+You can learn a bit more about me by reading [my posts](/posts) or by viewing [my resume](/2017/10/Cole_Lawrence_resume.pdf)
