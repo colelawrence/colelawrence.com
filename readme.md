@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/colelawrence/colelawrence.com.svg?branch=master)](https://travis-ci.org/colelawrence/colelawrence.com)
 
 <p align="center">
-  <img src="./static/images/brand/Macaroni.svg" height="100" width="100">
+  <a href="https://colelawrence.com"><img src="./static/images/brand/Macaroni.svg" height="100" width="100"></a>
 </p>
 
 
