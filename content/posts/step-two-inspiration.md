@@ -1,9 +1,15 @@
 ---
-title: "Inspiration & Logo Concepts"
-date: 2017-10-06T13:59:42-05:00
+title: "Inspiration & Blog Design"
+date: 2017-10-07T16:12:42-05:00
 draft: false
 type: "post"
 ---
+
+During my time attending clubs at Missouri State and starting Covalent, I ended up doing a lot of graphic design. I did not execute great graphic design while making banner ads and poster, but it was better than most posters you would see on campus. Then, while working on Covalent, I did a lot of experience design work and some branding and visual work for our mobile app, _Parrot_.
+
+It has been quite some time since I have gotten opportunities to do more of that creative visual work, so I am challenging myself to do more creative work–writing, illustration, and graphic design.
+
+It is important to me to be aware and understanding of all the roles on a team in order to collaborate and produce better work as a whole.
 
 Today started off with the following todo list:
 
