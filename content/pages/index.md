@@ -12,4 +12,6 @@ type: "index"
 
 I am a software engineer from Kansas City, Missouri.
 
-You can learn a bit more about me by reading [my posts](/posts) or by viewing [my resume](/2017/10/Cole_Lawrence_resume.pdf)
+You can learn a bit more about me by reading [my posts](/posts) or by viewing [my resume](/2017/10/Cole_Lawrence_resume.pdf).
+
+And, you can check out [my Github profile](https://github.com/colelawrence) to see what I'm working on.
