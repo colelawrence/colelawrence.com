@@ -12,7 +12,7 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}style/style.css">
 	<link rel="stylesheet" media="screen" href="{{ .Site.BaseURL }}style/pygments.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,700|Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,700|Vesper+Libre:400,500,700" rel="stylesheet">
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 	{{ .Hugo.Generator }}
 </head>
