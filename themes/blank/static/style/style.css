@@ -6,7 +6,8 @@ body {
 
   /* Background */
   /* background: linear-gradient(180deg, #52EEF8 0%, rgba(166, 58, 216, 0) 100%); */
-  background: #ffb4ce;
+  /* background: #ffb4ce; */
+  background: #f06292;
   min-height: 100vh;
 }
 main {
@@ -29,9 +30,10 @@ h1, h2, h3, h4 {
   margin-bottom: .3em;
   color: #1b0b0b;
 }
+
 body { font-weight: 400; }
 h1 { font-weight: 700; }
-h2, h3 { font-weight: 500; font-style: italic; }
+h2, h3 { font-weight: 500; }
 
 pre, code, kbd, tt, samp {
   font-family: 'Monaco', 'Fira Code', 'Hack', monospace;  
@@ -68,9 +70,10 @@ a, a:visited { color: inherit; text-decoration: inherit; position: relative; }
 a { text-decoration: inherit; border-bottom: 1px solid #0a7dca; }
 a[href^="/"]:not([href^="//"]),
 a[href*="colelawrence.com"],
+a[href*="colelawrence.ngrok.io"],
 a[href*="localhost:1313"] {
   /* Internal weblinks */
-  border-color: #FF0019
+  border-color: #ff006d
 }
 /* a:hover { border-bottom-style: dashed; } */
 /* a:focus { background: #ffb4ce } */
