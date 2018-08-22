@@ -8,10 +8,6 @@ type: "index"
   <img src="/images/brand/Macaroni.svg" alt="'Macaroni' emblem" width="50" height="50">
 </header>
 
-<h1 style="text-align: center">hello, I'm Cole!</h1>
+<h1 style="text-align: center">I'm Cole!</h1>
 
-I am a software engineer from Kansas City, Missouri.
-
-You can learn a bit more about me by reading [my posts](/posts) or by viewing [my resume](/2018/02/Cole_Lawrence_resume.pdf).
-
-And, you can check out [my Github profile](https://github.com/colelawrence) to see what I'm working on.
+I design, pitch, and develop digital products for our clients at [Reaktor Inc](https://reaktor.com) in New York City.

@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 	{{ $paginator := .Paginate (where .Site.Pages "Type" "index") }}
 	{{ range $paginator.Pages }}
-	<article style="max-width: 26rem; margin: 0 auto 4rem;">
+	<article style="max-width: 28rem; margin: 0 auto 4rem;">
 		{{ .Content }}
 	</article>
 	{{ end }}

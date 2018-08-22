@@ -1,7 +1,7 @@
 ;(function (document, window) {
   function setupNav() {
     // move components to body
-    let comps = Array.from(document.getElementById("nav-components").children)
+    const comps = Array.from(document.getElementById("nav-components").children)
     comps.forEach(elc => document.body.appendChild(elc))
 
     const body = document.body
