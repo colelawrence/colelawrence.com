@@ -3,12 +3,6 @@ body {
   font-size: 120%;
   line-height: 1.4;
   margin: 0;
-
-  /* Background */
-  /* background: linear-gradient(180deg, #52EEF8 0%, rgba(166, 58, 216, 0) 100%); */
-  /* background: #ffb4ce; */
-  background: #f06292;
-  min-height: 100vh;
 }
 main {
   display: block;
