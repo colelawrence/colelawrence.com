@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" style="background: #f06292">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,8 @@
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 	{{ .Hugo.Generator }}
 </head>
-<body style="transition: .4s ease opacity; opacity: 0">
+<style>body { opacity: 0 }</style>
+<noscript><style>body { opacity: 1 }</style></noscript>
+<body style="transition: .4s ease opacity;">
 	<div id="page">
 		<main>

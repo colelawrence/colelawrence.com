@@ -4,11 +4,12 @@
   function stripHash(href) {
     return href.replace(/#[\s\S]*$/, '')
   }
+
   function onNavigation(event, from, to) {
     if (!isSafari && stripHash(from) !== stripHash(to)) {
       function transitionOut() {
         // just once
-        document.body.addEventListener("transitionend", transitionOut)
+        document.body.removeEventListener("transitionend", transitionOut)
         window.location.href = to
       }
 

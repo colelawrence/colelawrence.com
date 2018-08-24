@@ -67,14 +67,14 @@
   padding-top: 1.3rem;
   margin-bottom: 1.5rem;
   z-index: 101;
-  -webkit-transform: translateY(-0.8rem);
-  -moz-transform: translateY(-0.8rem);
-  -o-transform: translateY(-0.8rem);
-  -ms-transform: translateY(-0.8rem);
-  transform: translateY(-0.8rem);
+  -webkit-transform: translateY(0rem);
+  -moz-transform: translateY(0rem);
+  -o-transform: translateY(0rem);
+  -ms-transform: translateY(0rem);
+  transform: translateY(0rem);
   background-color: #fff;
   background-image: url("/images/brand/Macaroni.svg");
-  background-position: 50% 1rem;
+  background-position: 50%;
   -webkit-background-size: 2rem 2rem;
   -moz-background-size: 2rem 2rem;
   background-size: 2rem 2rem;
@@ -82,11 +82,11 @@
   background-repeat: no-repeat;
 }
 #nav-toggle:hover {
-  -webkit-transform: translateY(-0.45rem);
-  -moz-transform: translateY(-0.45rem);
-  -o-transform: translateY(-0.45rem);
-  -ms-transform: translateY(-0.45rem);
-  transform: translateY(-0.45rem);
+  -webkit-transform: translateY(0.45rem);
+  -moz-transform: translateY(0.45rem);
+  -o-transform: translateY(0.45rem);
+  -ms-transform: translateY(0.45rem);
+  transform: translateY(0.45rem);
 }
 #nav-toggle .crown {
   display: none;
