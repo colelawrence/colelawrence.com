@@ -11,6 +11,10 @@
         // just once
         document.body.removeEventListener("transitionend", transitionOut)
         window.location.href = to
+        setTimeout(() => {
+          // just in case they didn't go anywhere
+          document.body.style.opacity = 1;
+        }, 1000)
       }
 
       document.body.addEventListener("transitionend", transitionOut)
