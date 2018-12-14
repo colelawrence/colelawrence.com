@@ -1,9 +1,14 @@
 {{ partial "header.html" . }}
+{{ partial "nav.html" . }}
 	{{ $paginator := .Paginate (where .Site.Pages "Type" "index") }}
 	{{ range $paginator.Pages }}
-	<article style="max-width: 28rem; margin: 0 auto 4rem;">
+	<article>
 		{{ .Content }}
 	</article>
 	{{ end }}
-	{{ partial "sidebar.html" . }}
+	<ul style="list-style: none; padding: 0; margin-top: 0;">
+		{{ range (where .Site.Pages "Type" "post") }}
+		<li><time style="width: 7em; display: inline-block;">{{ .Date.Format "Jan 2, 2006" }}</time><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+		{{ end }}
+	</ul>
 {{ partial "footer.html" . }}

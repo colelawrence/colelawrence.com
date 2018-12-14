@@ -1,10 +1,8 @@
 {{ partial "header.html" . }}
-<header>
-	<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-</header>
+{{ partial "nav.html" . }}
 {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
 {{ range $paginator.Pages }}
-	{{ partial "summary.html" . }}
+{{ partial "summary.html" . }}
 {{ end }}
 {{ partial "pagination.html" . }}
 {{ partial "footer.html" . }}
