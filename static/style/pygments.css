@@ -11,6 +11,10 @@ pre span.p {
 pre span.k,
 pre span.kd {
   color: #00f;
+  font-weight: 400;
+}
+.language-lua span.kr {
+  color: #483d8b;
   font-weight: 600;
 }
 
