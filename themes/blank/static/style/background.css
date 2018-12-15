@@ -1,0 +1,7 @@
+html{background:#9f133f;color: white;}
+body{
+background:
+center / cover
+url(/images/sorbet-bg-3.svg);
+min-height: 100vh;
+}
