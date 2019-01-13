@@ -14,7 +14,7 @@
         setTimeout(() => {
           // just in case they didn't go anywhere
           document.body.style.opacity = 1;
-        }, 1000)
+        }, 2000)
       }
 
       document.body.addEventListener("transitionend", transitionOut)
