@@ -46,3 +46,7 @@ If anyone came to me with this issue, the first thing I'd say would be to evalua
 If I take my own advice, I think my first course of action will be involving myself more in the programming communities here in NYC. It seems crazy to me that I have not been to [the Recurse center](https://www.recurse.com/), or been to a hackathon in the area, yet. Why am I not out and about as I had been while in Springfield, MO between 2015 and 2017?
 
 **I'm curious to hear if you've experienced this problem, and how you came to realize it was a problem.**
+
+
+
+Shared with [/r/programming](https://www.reddit.com/r/programming/comments/afoc8e/improvement_rut_sometimes_i_miss_the_allnighter/).
