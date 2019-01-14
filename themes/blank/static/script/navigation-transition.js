@@ -5,8 +5,13 @@
     return href.replace(/#[\s\S]*$/, '')
   }
 
+  function isInternalURL(url) {
+    let hasHostName = url.replace(/(\..*?)\/.*$/, '$1').indexOf(window.location.host) > -1;
+    return hasHostName || (/^\//.test(url) && !/^\/\//.test(url));
+  }
+
   function onNavigation(event, from, to) {
-    if (!isSafari && stripHash(from) !== stripHash(to)) {
+    if (!isSafari && isInternalURL(to) && stripHash(from) !== stripHash(to)) {
       function transitionOut() {
         // just once
         document.body.removeEventListener("transitionend", transitionOut)
