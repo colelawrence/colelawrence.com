@@ -2,7 +2,7 @@
 body {
   font-family: Raleway, -apple-system, Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 120%;
-  line-height: 1.4;
+  line-height: 1.65;
   margin: 0;
 }
 main {
@@ -14,7 +14,7 @@ main {
 
 p {
   margin: 0 auto;
-  padding: 1rem 0;
+  padding-bottom: 1.65em;
   letter-spacing: .02em;
   text-align: justify;
 }
@@ -29,7 +29,8 @@ time { font-style: italic; }
 
 h1, h2, h3, h4 {
   font-family: 'Vesper Libre', serif;
-  margin-bottom: .3em;
+  margin-bottom: .1em;
+  margin-top: 0.83em;
 }
 
 body { font-weight: 400; }
