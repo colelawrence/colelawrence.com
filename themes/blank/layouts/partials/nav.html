@@ -1,5 +1,60 @@
 <header>
-  <nav style="display: inline-block">
+  <nav style="display: block">
     <a class="btn" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <a class="btn" href="#menu" style="float: right;">
+      Menu&nbsp;
+      <svg style="vertical-align: bottom;" width="20" height="24" viewBox="0 0 20 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.5 8V6H17.5V8H2.5ZM2.5 13H17.5V11H2.5V13ZM2.5 18H17.5V16H2.5V18Z" fill="black" fill-opacity="0.1" />
+      </svg>
+    </a>
   </nav>
 </header>
+<a id="menu" href="#" class="not-a">
+  <nav style="display: block">
+    <a class="btn" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <a class="btn" href="#" style="float: right;">
+      Menu&nbsp;
+      <svg style="vertical-align: bottom;" width="20" height="24" viewBox="0 0 20 24" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.5 8V6H17.5V8H2.5ZM2.5 13H17.5V11H2.5V13ZM2.5 18H17.5V16H2.5V18Z" fill="black" fill-opacity="0.1" />
+      </svg>
+    </a>
+  </nav>
+  <table style="width: 100%; padding: 0 2rem;">
+    <tbody>
+      <tr>
+        <td class="div reveal" data-order="1" colspan="2"></td>
+      </tr>
+      <tr class="section">
+        <td><span class="label btn reveal" data-order="1">Projects</span></td>
+        <td>
+          <a class="link btn reveal" data-order="2">Market Price</a>
+          <a class="link btn reveal" data-order="3">Maximize</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="div reveal" data-order="4" colspan="2"></td>
+      </tr>
+      <tr class="section">
+        <td><span class="label btn reveal" data-order="4">Work</span></td>
+        <td>
+          <a class="link btn reveal" data-order="5">Reaktor</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="div reveal" data-order="6" colspan="2"></td>
+      </tr>
+      <tr class="section">
+        <td><span class="label btn reveal" data-order="6">Contact</span></td>
+        <td>
+          <a class="link btn reveal" data-order="7">Twitter</a>
+          <a class="link btn reveal" data-order="8">Linkedin</a>
+          <a class="link btn reveal" data-order="9">Email</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</a>

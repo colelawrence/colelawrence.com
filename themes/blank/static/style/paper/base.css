@@ -127,11 +127,22 @@ a[href*="localhost:1313"] {
   /* Internal weblinks */
   border-color: #ff006d;
 }
-a[href^="/"]:not([href^="//"]) + :hover,
-a[href*="colelawrence.com"] + :hover,
-a[href*="colelawrence.ngrok.io"] + :hover,
-a[href*="localhost:1313"] + :hover {
+a[href^="/"]:not([href^="//"]):hover,
+a[href*="colelawrence.com"]:hover,
+a[href*="colelawrence.ngrok.io"]:hover,
+a[href*="localhost:1313"]:hover {
   background-color: #f5569b;
+}
+
+a.not-a, a.btn {
+  border: none;
+}
+a.not-a:hover, a.btn:hover {
+  background-color: transparent;
+}
+
+a.not-a {
+  cursor: pointer;
 }
 
 /* a:hover { border-bottom-style: dashed; } */
@@ -153,4 +164,97 @@ a[href*="localhost:1313"] + :hover {
 
 h1 > a, h2 > a, h3 > a, h4 > a {
   border: none !important;
+}
+
+#menu {
+  position: fixed;
+  top: 4.25rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  pointer-events: none;
+  background: rgba(234, 234, 234, 0.99);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+#menu:target {
+  pointer-events: all;
+  opacity: 1;
+}
+#menu:target .reveal {
+  opacity: 1;
+}
+#menu table {
+  border-collapse: collapse;
+}
+#menu tr td.div {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+#menu .reveal {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+#menu .reveal[data-order="0"] {
+  transform: translateY(0px);
+  transition-delay: 0s;
+}
+#menu .reveal[data-order="1"] {
+  transform: translateY(-1px);
+  transition-delay: 0.1s;
+}
+#menu .reveal[data-order="2"] {
+  transform: translateY(-2px);
+  transition-delay: 0.2s;
+}
+#menu .reveal[data-order="3"] {
+  transform: translateY(-3px);
+  transition-delay: 0.3s;
+}
+#menu .reveal[data-order="4"] {
+  transform: translateY(-4px);
+  transition-delay: 0.4s;
+}
+#menu .reveal[data-order="5"] {
+  transform: translateY(-5px);
+  transition-delay: 0.5s;
+}
+#menu .reveal[data-order="6"] {
+  transform: translateY(-6px);
+  transition-delay: 0.6s;
+}
+#menu .reveal[data-order="7"] {
+  transform: translateY(-7px);
+  transition-delay: 0.7s;
+}
+#menu .reveal[data-order="8"] {
+  transform: translateY(-8px);
+  transition-delay: 0.8s;
+}
+#menu .reveal[data-order="9"] {
+  transform: translateY(-9px);
+  transition-delay: 0.9s;
+}
+#menu tr td {
+  vertical-align: top;
+  margin: 0;
+}
+#menu tr.section td:first-child {
+  padding-left: 5vw;
+}
+#menu tr.section td:last-child {
+  padding-right: calc(5vw + 0.5em + 20px);
+}
+#menu .label {
+  display: block;
+}
+#menu .link {
+  color: #1d1d1d;
+  display: block;
+  text-align: right;
+}
+#menu .link, #menu .label {
+  padding-top: 0.2em;
+  padding-bottom: 0.8em;
 }

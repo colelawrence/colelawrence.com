@@ -1,0 +1,75 @@
+@import 'colors';
+
+$color-body-black: $color-body-black;
+$color-subhead-black: $color-subhead-black;
+$color-highlight: $color-highlight;
+$background: #EAEAEA;
+
+#menu {
+  position: fixed;
+  top: 4.25rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  pointer-events: none;
+  background: transparentize($color: $background, $amount: 0.01);
+  opacity: 0;
+  transition: opacity .2s ease;
+  
+  &:target {
+    pointer-events: all;
+    opacity: 1;
+    
+    .reveal {
+      opacity: 1;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  tr td.div {
+    height: 1px;
+    background: $color-light;
+  }
+
+  .reveal {
+    opacity: 0;
+    transition: all .2s ease;
+  }
+  
+  @for $i from 0 to 10 {
+    .reveal[data-order="#{$i}"] {
+      transform: translateY(-1px * $i);
+      transition-delay: .1s * $i;
+    }
+  }
+
+  tr td {
+    vertical-align: top;
+    margin: 0;
+  }
+  tr.section td:first-child {
+    padding-left: 5vw;
+  }
+  tr.section td:last-child {
+    padding-right: calc(5vw + 0.5em + 20px);
+  }
+
+  .label {
+    display: block;
+  }
+  
+  .link {
+    color: $color-body-black;
+    display: block;
+    text-align: right;
+  }
+
+  .link, .label {
+    padding-top: 0.2em;
+    padding-bottom: 0.8em;
+  }
+}

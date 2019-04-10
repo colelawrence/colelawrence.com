@@ -70,9 +70,19 @@ a[href*="localhost:1313"] {
   /* Internal weblinks */
   border-color: #ff006d;
 
-  + :hover {
+  &:hover {
     background-color: #f5569b;
   }
+}
+
+a.not-a, a.btn {
+  border: none;
+  &:hover {
+    background-color: transparent;
+  }
+}
+a.not-a {
+  cursor: pointer;
 }
 /* a:hover { border-bottom-style: dashed; } */
 /* a:focus { background: #ffb4ce } */
