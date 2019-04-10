@@ -1,21 +1,18 @@
 const gulp = require('gulp')
-const stylus = require('gulp-stylus')
-const nib = require('nib')
-const sourcemaps = require('gulp-sourcemaps')
+const sass = require('gulp-sass')
+sass.compiler = require('sass')
 
 const staticSrcPath = './static-src/'
-const staticPath = './static/'
+const staticPath = './themes/blank/static/'
 
-gulp.task('stylus', () =>
-  gulp.src(staticSrcPath + 'style/*.styl')
-      .pipe(sourcemaps.init())
-      .pipe(stylus({use: nib()}))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest(staticPath + 'style/'))
+gulp.task('sass', () =>
+  gulp.src(staticSrcPath + 'style/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(staticPath + 'style/'))
 )
 
-gulp.task('watch', ['stylus'], () =>
-  gulp.watch(staticSrcPath + 'style/*.styl', ['stylus'])
+gulp.task('watch', ['sass'], () =>
+  gulp.watch(staticSrcPath + 'style/**/*.scss', ['sass'])
 )
 
-gulp.task('default', ['stylus'])
+gulp.task('default', ['sass'])

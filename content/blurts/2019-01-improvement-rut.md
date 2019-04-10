@@ -6,8 +6,6 @@ draft: false
 featured: true
 ---
 
-Do you miss a former version of yourself?
-
 # Collecting moss
 
 !["Capabilities Plateau"](/2019/01-improvement-rut/IMG_20190113_Plateau.jpg)

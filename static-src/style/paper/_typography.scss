@@ -1,0 +1,65 @@
+@import 'colors';
+
+$color-body-black: $color-body-black;
+$color-subhead-black: $color-subhead-black;
+$color-highlight: $color-highlight;
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  line-height: 143.75%;
+  color: $color-body-black;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+h1, h2, h3, h4 {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-subhead-black;
+  margin-bottom: .375em;
+  padding-top: .675em;
+  line-height: normal;
+}
+
+h1 {
+  margin-top: 1em;
+  color: $color-body-black;
+}
+
+.title {
+  text-align: center;
+
+  h1 {
+    color: $color-body-black;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 900;
+  }
+}
+
+p {
+  margin: 1em auto;
+  line-height: 183.75%;
+  text-align: justify;
+}
+
+pre, code, kbd, tt, samp {
+  font-family: 'Monaco', 'Fira Code', 'Hack', monospace;
+  font-family: inherit;
+}
+
+.btn {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  color: rgba(127, 127, 127, .3);
+  border: none;
+}
+
+::selection { background: $color-highlight; }

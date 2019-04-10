@@ -6,10 +6,10 @@
 	a { text-decoration: inherit; border-bottom: 1px solid #0a7dca; }
 </style>
 <article>
-	<div>
-		<h1 class="title">{{ .Title }}</h1>
+	<div class="title">
+		<h1>{{ .Title }}</h1>
+		<time>{{ .Date.Format "Jan 2, 2006" }}</time>
 	</div>
-	<time>{{ .Date.Format "Jan 2, 2006" }}</time>
 	<div>
 		{{ .Content }}
 	</div>

@@ -1,0 +1,156 @@
+body {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  line-height: 143.75%;
+  color: #1d1d1d;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+h1, h2, h3, h4 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #797979;
+  margin-bottom: 0.375em;
+  padding-top: 0.675em;
+  line-height: normal;
+}
+
+h1 {
+  margin-top: 1em;
+  color: #1d1d1d;
+}
+
+.title {
+  text-align: center;
+}
+.title h1 {
+  color: #1d1d1d;
+  font-size: 42px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+p {
+  margin: 1em auto;
+  line-height: 183.75%;
+  text-align: justify;
+}
+
+pre, code, kbd, tt, samp {
+  font-family: "Monaco", "Fira Code", "Hack", monospace;
+  font-family: inherit;
+}
+
+.btn {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: rgba(127, 127, 127, 0.3);
+  border: none;
+}
+
+::selection {
+  background: #fffb00;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+  padding: 2.25rem 5vw;
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+p > code {
+  border: 0.075rem solid rgba(28, 28, 28, 0.039);
+  border-radius: 0.1rem;
+  background: rgba(245, 245, 245, 0.027);
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  padding-left: 2ch;
+  border-left: 0.5ch solid rgba(255, 104, 172, 0.164);
+}
+
+img {
+  max-width: 100%;
+  max-height: 90vh;
+  margin: 0 -8px;
+  display: block;
+  padding: 8px;
+  border: 1px solid #1d1d1d;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+
+ul.task-list {
+  list-style: none;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: inherit;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+a {
+  text-decoration: inherit;
+  border-bottom: 1px solid #78bce9;
+}
+
+a:hover {
+  background: #a3d1f0;
+}
+
+a[href^="/"]:not([href^="//"]),
+a[href*="colelawrence.com"],
+a[href*="colelawrence.ngrok.io"],
+a[href*="localhost:1313"] {
+  /* Internal weblinks */
+  border-color: #ff006d;
+}
+a[href^="/"]:not([href^="//"]) + :hover,
+a[href*="colelawrence.com"] + :hover,
+a[href*="colelawrence.ngrok.io"] + :hover,
+a[href*="localhost:1313"] + :hover {
+  background-color: #f5569b;
+}
+
+/* a:hover { border-bottom-style: dashed; } */
+/* a:focus { background: #ffb4ce } */
+[id] > a {
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  padding-left: 1em;
+  margin-left: -1em;
+  padding-right: 0.5em;
+  margin-right: -1em;
+}
+
+[id]:hover > a,
+[id]:target > a {
+  background: #fffb00;
+  color: black !important;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a {
+  border: none !important;
+}

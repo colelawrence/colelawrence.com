@@ -1,0 +1,104 @@
+@import 'colors';
+
+$color-body-black: $color-body-black;
+$color-subhead-black: $color-subhead-black;
+$color-highlight: $color-highlight;
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+  padding: 2.25rem 5vw;
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
+footer {
+  margin-top: 4rem;
+}
+
+p > code {
+  border: .075rem solid rgba(28, 28, 28, 0.039);
+  border-radius: .1rem;
+  background: rgba(245, 245, 245, 0.027);
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  padding-left: 2ch;
+  border-left: .5ch solid rgba(255, 104, 172, 0.164);
+}
+
+img {
+  max-width: 100%;
+  max-height: 90vh;
+  margin: 0 -8px;
+  display: block;
+
+  padding: 8px;
+  border: 1px solid $color-body-black;
+}
+
+ul, ol {
+  padding-left: 2rem;
+}
+ul.task-list {
+  list-style: none;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: inherit;
+  position: relative;
+  transition: all .2s ease;
+}
+a {
+  text-decoration: inherit;
+  border-bottom: 1px solid #78bce9;
+}
+a:hover {
+  background: #a3d1f0;
+}
+a[href^="/"]:not([href^="//"]),
+a[href*="colelawrence.com"],
+a[href*="colelawrence.ngrok.io"],
+a[href*="localhost:1313"] {
+  /* Internal weblinks */
+  border-color: #ff006d;
+
+  + :hover {
+    background-color: #f5569b;
+  }
+}
+/* a:hover { border-bottom-style: dashed; } */
+/* a:focus { background: #ffb4ce } */
+
+[id] > a {
+  background: transparent;
+  transition: all .2s ease-in-out;
+  padding-left: 1em;
+  margin-left: -1em;
+  padding-right: 0.5em;
+  margin-right: -1em;
+}
+
+[id]:hover > a,
+[id]:target > a {
+  background: $color-highlight;
+  color: black !important;
+}
+
+// [id]:hover>a::before,
+// [id]:target>a::before {
+//   content: '🔗';
+//   position: absolute;
+//   left: 0em;
+//   font-style: normal;
+//   padding-right: .5ch;
+// }
+
+h1>a, h2>a, h3>a, h4>a { border: none !important; }

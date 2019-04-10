@@ -1,5 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" . }}
+	<br>
+	<style>body { color: rgba(255,255,255,0.9); }</style>
 	{{ range (where .Site.Pages "Type" "index") }}
 		<article>
 			{{ .Content }}
