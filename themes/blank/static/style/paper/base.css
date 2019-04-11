@@ -145,6 +145,10 @@ a.not-a {
   cursor: pointer;
 }
 
+.btn svg {
+  vertical-align: bottom;
+}
+
 /* a:hover { border-bottom-style: dashed; } */
 /* a:focus { background: #ffb4ce } */
 [id] > a {
@@ -168,15 +172,16 @@ h1 > a, h2 > a, h3 > a, h4 > a {
 
 #menu {
   position: fixed;
-  top: 4.25rem;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  padding: 2.25rem 5vw;
   z-index: 900;
   pointer-events: none;
   background: rgba(234, 234, 234, 0.99);
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.4s ease;
 }
 #menu:target {
   pointer-events: all;
@@ -185,56 +190,69 @@ h1 > a, h2 > a, h3 > a, h4 > a {
 #menu:target .reveal {
   opacity: 1;
 }
+#menu > * {
+  max-width: 42rem;
+  margin: 0 auto;
+}
 #menu table {
+  margin-top: 1em;
+  border-spacing: 0;
   border-collapse: collapse;
 }
 #menu tr td.div {
   height: 1px;
+  padding: 0;
   background: rgba(0, 0, 0, 0.1);
 }
 #menu .reveal {
   opacity: 0;
-  transition: all 0.2s ease;
+  transform: translateY(0px);
+  position: relative;
+  transition: all 0.2s;
 }
-#menu .reveal[data-order="0"] {
+#menu:target .reveal[data-order="0"] {
   transform: translateY(0px);
   transition-delay: 0s;
 }
-#menu .reveal[data-order="1"] {
-  transform: translateY(-1px);
+#menu:target .reveal[data-order="1"] {
+  transform: translateY(1px);
   transition-delay: 0.1s;
 }
-#menu .reveal[data-order="2"] {
-  transform: translateY(-2px);
+#menu:target .reveal[data-order="2"] {
+  transform: translateY(2px);
   transition-delay: 0.2s;
 }
-#menu .reveal[data-order="3"] {
-  transform: translateY(-3px);
+#menu:target .reveal[data-order="3"] {
+  transform: translateY(3px);
   transition-delay: 0.3s;
 }
-#menu .reveal[data-order="4"] {
-  transform: translateY(-4px);
+#menu:target .reveal[data-order="4"] {
+  transform: translateY(4px);
   transition-delay: 0.4s;
 }
-#menu .reveal[data-order="5"] {
-  transform: translateY(-5px);
+#menu:target .reveal[data-order="5"] {
+  transform: translateY(5px);
   transition-delay: 0.5s;
 }
-#menu .reveal[data-order="6"] {
-  transform: translateY(-6px);
+#menu:target .reveal[data-order="6"] {
+  transform: translateY(6px);
   transition-delay: 0.6s;
 }
-#menu .reveal[data-order="7"] {
-  transform: translateY(-7px);
+#menu:target .reveal[data-order="7"] {
+  transform: translateY(7px);
   transition-delay: 0.7s;
 }
-#menu .reveal[data-order="8"] {
-  transform: translateY(-8px);
+#menu:target .reveal[data-order="8"] {
+  transform: translateY(8px);
   transition-delay: 0.8s;
 }
-#menu .reveal[data-order="9"] {
-  transform: translateY(-9px);
+#menu:target .reveal[data-order="9"] {
+  transform: translateY(9px);
   transition-delay: 0.9s;
+}
+#menu:target .reveal[data-order="10"] {
+  transform: translateY(10px);
+  transition-delay: 1s;
 }
 #menu tr td {
   vertical-align: top;
@@ -244,7 +262,7 @@ h1 > a, h2 > a, h3 > a, h4 > a {
   padding-left: 5vw;
 }
 #menu tr.section td:last-child {
-  padding-right: calc(5vw + 0.5em + 20px);
+  padding-right: calc(0.5em + 24px);
 }
 #menu .label {
   display: block;

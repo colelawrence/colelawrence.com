@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'lengths';
 
 $color-body-black: $color-body-black;
 $color-subhead-black: $color-subhead-black;
@@ -10,9 +11,9 @@ body {
 
 main {
   display: block;
-  padding: 2.25rem 5vw;
+  padding: $length-top $length-sides;
   margin: 0 auto;
-  max-width: 42rem;
+  max-width: $length-max-width;
 }
 
 footer {
@@ -81,9 +82,15 @@ a.not-a, a.btn {
     background-color: transparent;
   }
 }
+
 a.not-a {
   cursor: pointer;
 }
+
+.btn svg {
+  vertical-align: bottom;
+}
+
 /* a:hover { border-bottom-style: dashed; } */
 /* a:focus { background: #ffb4ce } */
 
