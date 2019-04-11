@@ -1,6 +1,10 @@
 </main>
 </div>
-<script src="/script/navigation-transition.js"></script>
-<script src="/script/link-headers-with-id.js"></script>
+{{ $navigationSrc := resources.Get "script/navigation-transition.js"}}
+{{ $navigationJs := $navigationSrc | resources.Minify }}
+{{ $linkSrc := resources.Get "script/link-headers-with-id.js"}}
+{{ $linkJs := $linkSrc | resources.Minify }}
+{{ $secureJS := slice $navigationJs $linkJs | resources.Concat "script/bundle.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
 </body>
 </html>

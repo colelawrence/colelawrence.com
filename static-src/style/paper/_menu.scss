@@ -3,8 +3,8 @@
 
 $color-body-black: $color-body-black;
 $color-subhead-black: $color-subhead-black;
+$color-subsubhead-black: $color-subsubhead-black;
 $color-highlight: $color-highlight;
-$background: #EAEAEA;
 
 #menu {
   position: fixed;
@@ -15,9 +15,9 @@ $background: #EAEAEA;
   padding: $length-top $length-sides;
   z-index: 900;
   pointer-events: none;
-  background: transparentize($color: $background, $amount: 0.01);
+  background: transparentize($color: $color-background-light, $amount: 0.01);
   opacity: 0;
-  transition: opacity .4s ease;
+  transition: opacity .3s ease;
   
   &:target {
     pointer-events: all;
@@ -70,10 +70,12 @@ $background: #EAEAEA;
     padding-left: $length-sides;
   }
   tr.section td:last-child {
-    padding-right: calc(0.5em + 24px);
+    padding-right: calc(#{$length-space} + 20px);
+    padding-bottom: 1em;
   }
 
   .label {
+    color: $color-subhead-black;
     display: block;
   }
   
