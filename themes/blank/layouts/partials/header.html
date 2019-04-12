@@ -17,7 +17,6 @@
 	{{ $baseCSS := resources.Get "style/paper/base.css" }}
 	{{ $secureCSS := $baseCSS | resources.Minify | resources.Fingerprint "md5" }}
 	<link rel="stylesheet" href="{{ $secureCSS.Permalink }}" type="text/css">
-	<link rel="stylesheet" media="screen" href="{{ .Site.BaseURL }}style/pygments.css">
 	{{ if .RSSLink -}}
 	<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 	{{ .Hugo.Generator }}

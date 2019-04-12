@@ -20,14 +20,14 @@ $fadedgrey: #dbdbdb;
 pre {
   // space grey #607d8b
   // bright blue #2196f3
-  span.o { color: darkslateblue; font-weight: $w2 }
-  span.c1 { color: olivedrab }
-  span.p { color: darkgoldenrod }
-  span.k, span.kd { color: blue; font-weight: $w1 }
+  span.o { color: $c4; font-weight: $w2 }
+  span.c1 { color: $d2 }
+  span.p { color: $d1 }
+  span.k, span.kd { color: $c3; font-weight: $w1; }
 }
 
 .language-lua {
-  span.kr { color: darkslateblue; font-weight: $w2 }
+  span.kr { color: $c4; font-weight: $w2 }
 }
 
 // .highlight *::-moz-selection { color: black; background: $fadedgrey; }

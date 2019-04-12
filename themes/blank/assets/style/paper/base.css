@@ -1,6 +1,6 @@
 body {
   font-family: "Libre Baskerville", serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 143.75%;
   color: #1d1d1d;
   -webkit-hyphens: auto;
@@ -43,7 +43,8 @@ p {
 
 pre, code, kbd, tt, samp {
   font-family: "Monaco", "Fira Code", "Hack", monospace;
-  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.3em;
 }
 
 .btn {
@@ -91,7 +92,7 @@ body {
 
 main {
   display: block;
-  padding: 2.25rem 5vw;
+  padding: 5vw 5vw;
   margin: 0 auto;
   max-width: 42rem;
 }
@@ -208,7 +209,7 @@ h1 > a, h2 > a, h3 > a, h4 > a {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 2.25rem 5vw;
+  padding: 5vw 5vw;
   z-index: 900;
   pointer-events: none;
   background: rgba(234, 234, 234, 0.99);
@@ -309,4 +310,61 @@ h1 > a, h2 > a, h3 > a, h4 > a {
 #menu .link, #menu .label {
   padding-top: 0.2em;
   padding-bottom: 0.8em;
+}
+
+header {
+  height: calc(26px + 5vw);
+}
+
+#scroll-heading {
+  background: inherit;
+}
+#scroll-heading .mini-title {
+  display: none;
+  float: left;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+#scroll-heading.sticky {
+  background: #EAEAEA;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #eeeeeeee;
+  padding: 2.5vw 5vw;
+  transition: background 0.2s ease;
+  z-index: 400;
+}
+#scroll-heading.sticky.show-mini-title .mini-title {
+  display: block;
+}
+#scroll-heading.sticky.show-mini-title .home-btn {
+  display: none;
+}
+#scroll-heading.sticky .btn {
+  color: #797979;
+}
+
+pre span.o {
+  color: #30336d;
+  font-weight: 600;
+}
+pre span.c1 {
+  color: #9f9d23;
+}
+pre span.p {
+  color: #6b691f;
+}
+pre span.k, pre span.kd {
+  color: #474db4;
+  font-weight: 400;
+}
+
+.language-lua span.kr {
+  color: #30336d;
+  font-weight: 600;
 }

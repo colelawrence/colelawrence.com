@@ -6,7 +6,7 @@ $color-highlight: $color-highlight;
 
 body {
   font-family: 'Libre Baskerville', serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 143.75%;
   color: $color-body-black;
 
@@ -51,7 +51,8 @@ p {
 
 pre, code, kbd, tt, samp {
   font-family: 'Monaco', 'Fira Code', 'Hack', monospace;
-  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.3em;
 }
 
 .btn {

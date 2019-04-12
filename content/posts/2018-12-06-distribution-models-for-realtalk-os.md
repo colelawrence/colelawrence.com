@@ -2,7 +2,7 @@
 title: "Realtalk OS language notes"
 date: 2018-12-06T9:00:00-08:00
 type: "post"
-draft: true
+draft: false
 ---
 
 Over the past four weeks, I have been experimenting with reverse-engineering the Realtalk language used in the Dynamicland project.
