@@ -17,17 +17,17 @@ code ./writing.code-workspace
 
 ```sh
 # Setup new-post script
-chmod +x ./new-post.sh
+chmod +x ./new-post
 
 # Create a new post
-./new-post.sh hello-world
+./new-post hello-world
 ```
 
 ## Debugging
 
 ```sh
 # Start server
-./serve.sh
+./serve
 ```
 
 Neat, now that I've setup the _perfectest_ environment for writing, we have no more excuses.

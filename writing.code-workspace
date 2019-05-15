@@ -13,8 +13,6 @@
 		"editor.fontSize": 16,
 		"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
 		"editor.tabSize": 2,
-		"editor.wordWrap": "wordWrapColumn",
-		"editor.wordWrapColumn": 80,
 		"editor.lineNumbers": "off",
 		"editor.smoothScrolling": true,
 		"markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
@@ -41,6 +39,10 @@
 			"[Verdandi]": {
 				"editorGroup.border": "#00000008"
 			}
+		},
+		"[markdown]": {
+			"editor.wordWrap": "wordWrapColumn",
+			"editor.wordWrapColumn": 80,
 		}
 	},
 	"extensions": {
