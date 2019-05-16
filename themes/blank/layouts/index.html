@@ -9,6 +9,7 @@
 			{{ .Content }}
 		</article>
 	{{ end }}
+	<!--
 	<ul style="list-style: none; padding: 0; margin-top: 0;">
 		{{ range (where (where .Site.Pages "Type" "post") "Params.featured" true) }}
 			<li>
@@ -31,5 +32,6 @@
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
 	</div>
 	{{ end }}
+	-->
 </div>
 {{ partial "footer.html" . }}
