@@ -4,4 +4,6 @@ draft: false
 type: "index"
 ---
 
-I design, pitch, and develop digital products for our clients at [Reaktor Inc](https://reaktor.com) in New York City.
+I design, pitch, and develop digital products for companies with complicated problems in New York City.
+
+Previously, consulting at [Reaktor Inc](https://reaktor.com).
