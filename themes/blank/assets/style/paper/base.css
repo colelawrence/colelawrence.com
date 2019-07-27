@@ -132,6 +132,23 @@ ul.task-list {
   list-style: none;
 }
 
+.column-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column:first-child {
+  padding-left: 0;
+}
+
+.column {
+  padding: 0 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
 .home-page .home-btn:not(:focus) {
   visibility: hidden;
 }
