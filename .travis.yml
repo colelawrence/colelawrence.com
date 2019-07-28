@@ -1,10 +1,12 @@
 language: go
 install: go get -v github.com/spf13/hugo
 script:
-  - hugo
   - python --version
   - sudo pip install awscli
-  - aws s3 sync public/ s3://colelawrence.com/ --delete
+  - hugo && aws s3 sync public/ s3://colelawrence.com/ --delete
 notifications:
     email:
         on_failure: always
+branches:
+  only:
+  - master
