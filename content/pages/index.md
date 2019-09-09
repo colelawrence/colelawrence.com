@@ -4,6 +4,4 @@ draft: false
 type: "index"
 ---
 
-Developing the friendliest quality assurance product in customer service with [MaestroQA](https://www.maestroqa.com/).
-
-Previously, consulting at [Reaktor Inc](https://reaktor.com).
+User-centric end-to-end software product engineer and passionate technologist familiar with a wide range of programming languages, frameworks, and tools.
